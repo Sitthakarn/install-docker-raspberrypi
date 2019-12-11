@@ -1,8 +1,9 @@
-# install-docker-raspberrypi
-Install docker &amp; docker-compose on raspberry pi
+# Install docker &amp; docker-compose on raspberry pi
+from : Jonathan https://jonathanmeier.io/author/jonathan/
 
 Install Docker and Docker-Compose on your Raspberry Pi
-March 6, 2019 jonathan  Leave a comment
+March 6, 2019 jonathan
+
 In this tutorial, we will cover how to install docker and docker-compose on a raspberrypi and run a simple container.
 
 One thing to keep in mind through all of this is that the pi is built on an ARM architecture as opposed to Intel. As a result, you will only be able to run containers built for the ARM architecuture.
@@ -11,7 +12,7 @@ Fortunately, Docker Official Images should all support this architecture as per 
 
 That said, let’s get started.
 
-First, you can install docker with an easy install script as follows:
+## 1. First, you can install docker with an easy install script as follows:
 
 ```
 $ curl -sSL https://get.docker.com | sh
@@ -64,12 +65,13 @@ And then logout and login again.
 
 Now that we know docker is working, let’s go and grab docker-compose.
 
-First, install pip:
+## 2. Install pip:
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
 ```
 
+## 3. Install docker-compose
 Now install docker-compose with:
 
 ```
@@ -81,14 +83,19 @@ Finally, test that things are working by creating a docker-compose file:
 ```
 $ vim docker-compose.yml
 ```
-
+## 4. Install vim
 If you don’t have vim installed, you can grab it with:
 
 ```
 sudo apt-get update && sudo apt-get install vim -y
 ```
-
+## 5. Test docker-compose
 Now in docker-compose.yml put:
+
+```
+$ vim docker-compose.yml
+```
+Add this settings:
 
 ```
 version: '3'
