@@ -61,7 +61,7 @@ For more examples and ideas, visit:
 If you get a permissions error, be sure to add your user to the docker group:
 
 ```
-usermod -aG docker <your_user>
+$ usermod -aG docker <your_user>
 ```
 
 And then logout and login again.
@@ -71,7 +71,7 @@ Now that we know docker is working, let’s go and grab docker-compose.
 ## 2. Install pip:
 
 ```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
+$ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
 ```
 
 ## 3. Install docker-compose
@@ -90,7 +90,7 @@ $ vim docker-compose.yml
 If you don’t have vim installed, you can grab it with:
 
 ```
-sudo apt-get update && sudo apt-get install vim -y
+$ sudo apt-get update && sudo apt-get install vim -y
 ```
 ## 5. Test docker-compose
 Now in docker-compose.yml put:
@@ -113,7 +113,7 @@ services:
 Then start the service with:
 
 ```
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 Now you can curl the service with:
