@@ -177,10 +177,9 @@ Content-Length: 915
 <hr>
 </body>
 </html>
-
-```
-* Curl_http_done: called premature == 0
-* Closing connection 0
+Curl_http_done: called premature == 0
+Closing connection 0
 Provided you get a 200 response, your docker-compose service is up and running!
+```
 
 Now you can bring the service down with docker-compose down, and you’re all done.
