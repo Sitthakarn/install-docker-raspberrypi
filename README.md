@@ -74,6 +74,12 @@ Now that we know docker is working, let’s go and grab docker-compose.
 $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
 ```
 
+```
+$ sudo apt-get install libffi-dev libssl-dev
+$ sudo apt-get install -y python python-pip
+$ sudo apt-get remove python-configparser
+```
+
 ## 3. Install docker-compose
 Now install docker-compose with:
 
