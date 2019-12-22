@@ -189,3 +189,22 @@ Provided you get a 200 response, your docker-compose service is up and running!
 ```
 
 Now you can bring the service down with docker-compose down, and you’re all done.
+
+## Installing Docker Compose (Special Case)
+In this last step we’re installing Docker Compose.
+
+The official installation method for Linux, as in the Docker documentation, points users to the GitHub downloads page, which however does not offer pre-built binaries for the ARM architecture.
+
+Luckily, we can still easily install Docker Compose from pip:
+
+# Install required packages
+```
+$ sudo apt update
+$ sudo apt install -y python python-pip libffi-dev python-backports.ssl-match-hostname
+```
+# Install Docker Compose from pip
+# This might take a while
+```
+$ sudo pip install docker-compose
+```
+With this, you now have a complete Raspberry Pi mini-server running Docker and ready to accept your containers.
