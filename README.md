@@ -76,8 +76,8 @@ $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pi
 
 ```
 $ sudo apt install python3-distutils
-$ sudo apt-get install libffi-dev libssl-dev
-$ sudo apt-get install -y python python-pip
+$ sudo apt-get install -y libffi-dev libssl-dev
+$ sudo apt-get install -y python3 python3-pip
 $ sudo apt-get remove python-configparser
 ```
 
